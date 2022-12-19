@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #C5D5E4;
+}
+
+.list{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    margin: auto;
+    padding: 0.5% 0;
+    justify-content: center;
+    background-color: #8896ab;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(7, 129, 204);
+}
+
+.detail{
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.detail h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 5%;
+}
+
+span{
+    color: #944654;
+}
+
+.detail p{
+    color: #555;
+    line-height: 110%;
+    padding-left: 0%;
+    width: 45%;
+}
+
+div{
+    height: 15px;
+}
+
+.social{
+    position: absolute;
+    bottom: 3%;
+    left:5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -2%;
+}
+
+.social p{
+    color: #555;
+    line-height: 110%;
+    padding-left: 0%;
+    width: 50%;
+    font-size: smaller;
+}
+
+.social a{
+    display: inline-block;
+    font-size: 20px;
+    margin: 50px;
+    transform: transform 0.3s;
+}
+
+.social a:hover{
+    transform: scale(1.5);
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position:absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height:100%;
+    position:absolute;
+    left: 50%;
+    bottom:0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images .color{
+    width: 80%;
+    height: 100%;
+    bottom: 7%;
+}
+
+.images:hover .color{
+    bottom:10%;
+}
+
+.images:hover .me{
+    left:45%;
+}
+
+.education{
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.education h1{
+    font-size: 50px;
+    color: #212121;
+}
+
+.eduarticle{
+    margin-top: -4.5%;
+}
+
+.education h2{
+    font-size: 20px;
+    color: #555;
+}
+
+.kps{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.k{
+    flex-basis: 32%;
+    height: 100%;
+    text-align: center;
+    border-radius: 7px;
+    position: relative ;
+    color: #fff;
+}
+
+.k img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 2620%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#2d4861);
+    opacity: 0;
+    transition: 1s;
+}
+
+.k:hover .overlay{
+    opacity: 1;
+}
+
+.desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+hr{
+    background: #fff;
+    height: 2px;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.desc h3{
+    font-size: 30px;
+}
+
+.desc p{
+    font-size: 18px;
+}
+
+.k:hover .desc{
+    opacity: 1;
+    bottom: -1000%;
+}
+
+h3 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.title{
+    margin-left: 8%;
+    margin-top: 5.1%;
+    font-size: 33px;
+}
+
+
+.photo{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.k123{
+    flex-basis: 32%;
+    height: 100%;
+    text-align: center;
+    border-radius: 7px;
+    position: relative ;
+    color: #fff;
+}
+
+.pics{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.k1{
+    flex-basis: 24%;
+    height: 100%;
+    text-align: center;
+    border-radius: 7px;
+    position: relative ;
+    color: #fff;
+}
+
+.k1 img{
+    width: 100%;
+    border-radius: 7px;
+    display: block;
+}
+
+.text{
+    margin-left: 10%;
+    margin-top: 20%;
+    font-size: 20px;
+    width: 80%;
+}
+.text a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+.text a:hover{
+    color: #2d4861;
+}
+
+.years{
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-left: 5%;
+}
+
+.eachyear{
+    flex-basis: 20%;
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 9%;
+    color: #fff;
+}
+
+.eachyear img{
+    width: 80%;
+    border-radius:7px ;
+}
+
+ul span{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul li{
+    font-size: larger;
+}
+
+.img{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: -22.5%;
+    margin-right: 5%;
+}
+
+.details{
+    flex-basis: 45%;
+    height: 100%;
+    border-radius: 7px;
+    position: relative ;
+    color: #fff;
+}
+
+.details img{
+    width: 100%;
+    border-radius: 7px;
+    display: block;
+
+}
+
+.pg{
+    margin-left: 8%;
+    margin-top: 22%;
+    font-size: 20px;
+    width: 80%;
+    position: absolute;
+}
+.pg a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+.pg a:hover{
+    color: #2d4861;
+}
+
+.scroll-bar{
+    height: 55%;
+    Width: 560px;
+    border: 1px solid #C5D5E4;
+    overflow: auto;
+    margin-left: 8%;
+    margin-top: 3.5%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border: 1px solid #C5D5E4;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #8896ab;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #2d4861;
+}
+
+.imga{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: -30%;
+    margin-right: 5%;
+}
+
+.detailsa{
+    flex-basis: 45%;
+    height: 100%;
+    border-radius: 7px;
+    position: relative ;
+    color: #fff;
+}
+
+.detailsa img{
+    width: 100%;
+    border-radius: 7px;
+    display: block;
+
+}
+
+.pga{
+    margin-left: 8%;
+    margin-top: 29%;
+    font-size: 20px;
+    width: 80%;
+    position: absolute;
+}
+.pga a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+.pga a:hover{
+    color: #2d4861;
+}
+
+.scroll-bara{
+    height: 55%;
+    Width: 560px;
+    border: 1px solid #C5D5E4;
+    overflow: auto;
+    margin-left: 8%;
+    margin-top: 4.5%;
+}
+
+.kpsa{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.ka{
+    flex-basis: 40%;
+    height: 100%;
+    text-align: center;
+    border-radius: 7px;
+    position: relative ;
+    color: #fff;
+}
+
+.ka img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+.overlaya{
+    width: 100%;
+    height:2462%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#2d4861);
+    opacity: 0;
+    transition: 1s;
+}
+
+.ka:hover .overlaya{
+    opacity: 1;
+}
+
+.desca{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+hr{
+    background: #fff;
+    height: 2px;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.desca h3{
+    font-size: 30px;
+}
+
+.desca p{
+    font-size: 18px;
+}
+
+.ka:hover .desca{
+    opacity: 1;
+    bottom: -1000%;
+}
+
+h4{
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+    color: #2d4861;
+}
+
+.scroll-bara hr{
+    height: 3px;
+    background-color: #2d4861;
+    border: none;
+}
+
+.scroll-bar a{
+    color: #000;
+    text-decoration: none;
+}
+
+.scroll-bar a:hover{
+    color: #2d4861;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.gal .scroll-bar{
+    margin-top: 2%;
+    width: 85%;
+    height: 3895%;
+}
+
+.scroll-barb{
+    height: 55%;
+    Width: 560px;
+    border: 1px solid #C5D5E4;
+    overflow: auto;
+    margin-left: 52%;
+    margin-top: -28.3%;
+}
+
+.scroll-bar hr{
+    height: 3px;
+    background-color: #2d4861;
+    border: none;
+}
+
+.scroll-barb a{
+    color: #2d4861;
+    text-decoration: none;
+}
